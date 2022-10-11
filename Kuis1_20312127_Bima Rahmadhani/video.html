@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/tekno.png">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">BIMA RAHMADHANI</div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="organisasi.html">Organisasi</a></li>
+                <li><a href="video.html" class="active">Video</a></li>
+                <li><a href="karya.html">Daftar Karya</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <h2>Video</h2>
+    <video controls>
+        <source src="UAS_20312127_Inggris2.mp4" type="video/mp4">
+    </video>
+    
+    <script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>

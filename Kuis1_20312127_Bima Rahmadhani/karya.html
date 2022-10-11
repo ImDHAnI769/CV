@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/tekno.png">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">BIMA RAHMADHANI</div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="organisasi.html">Organisasi</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="karya.html" class="active">Daftar Karya</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <img src="img/-6206013153725231547_121.jpg" alt="karya">
+    <h2>Pada Tahun 2022</h2>
+    <p>Tim saya masuk 10 besar dalam perlombaan EXPO 2022 di Teknokrat Indonesia, tim kami membuat suatu aplikasi 
+        yang bernama Tabriz.id. Tabriz.id sendiri adalah aplikasi berbasis android yang penggunanya dapet memasan 
+        parcel dari aplikasi tersebut, dengan menggunakan aplikasi tersebut penjual dapat memasarkan produknya lebih 
+        menyeluruh di beberapa daerah lampung.
+        <br/>
+        <p>.</p>  
+    </p>
+    <script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
